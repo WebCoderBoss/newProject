@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+/* img */
+.bar, .content {
+    background-color: #4E53C8;
+}
+.bar , .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bar img {
+    width: 70px;
+    height: 70px;
+}
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+.logo a span {
+    font-size: 35px;
+}
+.menu {
+    float: left;
+}
+.menu ul {
+    list-style-type: none;
+}
+.menu > ul > li {
+    float: left;
+    position: relative;
+}
+.menu ul li a span {
+    margin-left: 8px;
+}
+.menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.menu ul li a {
+    text-decoration: none;
+    display: flex;
+    color: white;
+}
+.menu ul li a:hover {
+    color: ;
+}
+.menu ul li{
+    margin-left: 20px;
+    font-size: 16px;
+}
+.menu ul li ul li {
+    margin: 15px 20px;
+}
+.menu ul ul {
+    position: absolute;
+    background-color: #4E53C8;
+    display: none;
+}
+.menu ul li:hover ul {
+    display: block;
+}
+.social {
+    font-size: 22px;
+    overflow: hidden;
+}
+.social a {
+    display: inline-block;
+    color: white;
+}
+.bar {
+    border-bottom: 1px solid black;
+}
+/* ontent */
+.w-400 {
+    padding-top: 40px;
+    width: 500px;
+    height: 240px;
+    text-align: center;
+    font-family: 'Poppins';font-size: 22px;
+    overflow: hidden;
+}
+.tex_con, .buton {
+    padding: 20px;
+    text-align: center;
+}
+.tex_con {
+    display: block;
+    color: white;
+}
+.tex_con h4 {
+    font-style: oblique ;
+    font-size: 16px;
+}
+.tex_con .shag {
+    display: flex;
+    justify-content: center;
+}
+.tex_con .shag span {
+    font-size: 30px;
+    font-size: 35px;
+}
+.tex_con .shag h1 {
+    padding: 10px 0;
+    font-size: 35px;
+}
+.tex_con p {
+    font-size: 16px;
+}
+.buton button {
+    padding: 10px 30px;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buton button {
+    box-shadow: #000 0 1px 5px 0;
+    margin-left: 5px;
+    border-bottom: 2px solid #4c4c4c;
+    transition: 0.3s;
+}
+.active {
+    background: black;
+    color: white;
+}
+.buton button:hover {
+    background: black;
+    color: white;
+    box-shadow: #fff 0 1px 5px 0;
+}
+/* ser */
+
+.ser {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    background: #4E53C8;
+    overflow: hidden;
+}
+.ser .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(images/wave.png);
+    background-size: 1000px 100px;
+}
+.ser .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.ser .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.ser .wave.wave3 {
+    animation: animate2 15s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+.ser .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -7s;
+    bottom: 20px;
+}
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+/* box content 2 */
+.content2 .title {
+    overflow: hidden; text-align: center; 
+     margin: auto;
+}
+.content2 .title .line {
+	width: 180px;
+	height: 2px;
+	background: #000;
+	margin: auto;
+    margin-top: 4px;
+}
+.content2 .title .line.line1 {
+    width: 150px;
+}
+.content2 {
+    height: 600px;
+    box-sizing: border-box;
+   
+}
+.cont2 {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.cont2 h5 {
+    padding-top: 10px;
+}
+.cont2 p {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.cont2 a {
+	 text-decoration: none;
+	font-size: 12px;
+	display: block;
+}
+.cont2 .texbox {
+    margin: 25px 0;
+}
+.cont2 .box .font_w {
+    font-size: 40px;
+}
+.cont2 .box {
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 20px;
+}
+.cont2 .box {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: #000 1px 1px 14px -4px;
+    text-align: center;
+}
+/*  cont_about */
+
+.cont_about {
+   padding-bottom: 10px;
+    overflow: hidden;
+}
+.cont_about .model {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.model .about-box {
+    width: 50px;
+    height: 50px;
+    box-shadow: #000 1px 1px 14px -4px;
+}
+.cont_about .about-cont {
+    max-width: 980px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: #000 1px 1px 14px -4px;
+    box-sizing: border-box;
+    object-position: center;
+    object-fit: contain;
+}
+.cont_about .about-cont {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 16px;
+}
